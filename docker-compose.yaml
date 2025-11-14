@@ -6,6 +6,7 @@ services:
     ports:
       - "5000:8000"
     environment:
+      - APP_ENV=prod
       - DATABASE_URL=postgresql://user:password@db/app
       - REDIS_HOST=cache
     depends_on:
